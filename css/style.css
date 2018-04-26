@@ -1,0 +1,508 @@
+/*
+Template Name: Guld Games
+Description: HTML5 / CSS3 One Page
+Version: 0.1
+Author: Rio Myers
+Website: https://riomyers.com
+Disclaimer: Some website components were copied from Guld.io template, originally designed by Chriss Mejía, https://chrissmejia.com
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #333;
+    font-weight: 300;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4a2776;
+    border-color: #4c3b5a;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #932de1;
+    border-color: #4c3b5a;
+}
+
+a {color: #3a0a5c;}
+
+a:hover{color: #932de1;}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    background-color: #3a0a5c;
+}
+
+section.fw{
+	height: 100vh;
+	width: 100vw;
+}
+
+.navbar {
+    background: #000;
+}
+
+.navbar-light .navbar-toggler {
+    background: rgba(251, 251, 251, 0.8);
+}
+
+.navbar #logo {
+    width: 15rem;
+}
+
+.header #ico {
+    opacity: 0.9;
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.header .text {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.header .description {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 2rem 0 1.4rem 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.header #welcome {
+	position: relative;
+	top: -10vh;
+    text-align: center;
+}
+
+.header #welcome .btn {
+    color: #ffffff;
+    background-color: initial;
+    border-color: #ffffff;
+}
+
+.header #welcome img{
+	height: 15rem;
+}
+
+#social {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#social a {
+    font-size: 1.6rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    border: 2px #ababab solid;
+    border-radius: 50%;
+    margin: 1rem;
+    padding: 0.6rem;
+    color: #ababab;
+    top: 0;
+    position: relative;
+    animation: social-show 1s;
+    -webkit-animation: social-show 1s;
+}
+
+#social a:hover,
+#social a:active {
+    color: #d1d1d1;
+    border: 2px #d1d1d1 solid;
+}
+
+@keyframes social-show {
+    from {
+        top: 8rem;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#social #telegram {
+    padding: 0.6rem 0.5rem;
+}
+
+#social #facebook {
+    padding: 0.6rem 0.9rem;
+}
+
+#read_seminar {
+    margin-top: 4rem;
+}
+/* Keeping countdown CSS in case we need it to countdown to the Launch Party */
+.countdown {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+    opacity: 0.9;
+    height: 4rem;
+    display: inline-block;
+}
+
+.countdown .time {
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    height: 8rem;
+    width: 6rem;
+    -webkit-perspective: 479px;
+    -moz-perspective: 479px;
+    -ms-perspective: 479px;
+    -o-perspective: 479px;
+    perspective: 479px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.countdown .count {
+    background: #202020;
+    color: #f8f8f8;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.3rem;
+    line-height: 2.4em;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    top: 0;
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform-style: flat;
+    -moz-transform-style: flat;
+    -ms-transform-style: flat;
+    -o-transform-style: flat;
+    transform-style: flat;
+}
+
+.countdown .count.top {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px 5px 0 0;
+    height: 50%;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.countdown .count.bottom {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 0 0 5px 5px;
+    line-height: 0;
+    height: 50%;
+    top: 50%;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.countdown {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 11rem;
+}
+
+.countdown h1 {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.countdown .label {
+    font-weight: 500;
+    text-shadow: 0 1px 0 #010101;
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    top: 8rem;
+    width: 100%;
+    color: #fff;
+}
+
+/* Animation start */
+
+.countdown .count.curr.top {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    z-index: 3;
+}
+
+.countdown .count.next.bottom {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    z-index: 2;
+}
+
+/* Animation end */
+
+.countdown .flip .count.curr.top {
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.countdown .flip .count.next.bottom {
+    -webkit-transition: all 250ms ease-in-out 250ms;
+    -moz-transition: all 250ms ease-in-out 250ms;
+    -ms-transition: all 250ms ease-in-out 250ms;
+    -o-transition: all 250ms ease-in-out 250ms;
+    transition: all 250ms ease-in-out 250ms;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+a.nav-link {
+    color: #fff !important;
+    font-weight: 400;
+    text-shadow: 0 0 20px #000000;
+    opacity: 0.8;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.section-title h1 {
+    margin: 0 0 3rem 0;
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 1.2em;
+    font-weight: 300;
+}
+
+.gray-bg {
+    background-color: #f0f1f3;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: -0.4rem 0 0 0;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.events {
+    text-align: center;
+}
+
+.events .thumbnail {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 2rem;
+}
+
+.events .thumbnail a:hover {
+    text-decoration: none;
+}
+
+.events .thumbnail .website {
+    display: none;
+}
+
+.events .thumbnail:hover .website {
+    display: block;
+}
+
+.events .thumbnail .website .title {
+    display: block;
+}
+
+.events .thumbnail:hover .title {
+    display: none;
+}
+
+.thumbnail img {
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.thumbnail h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.thumbnail h3 small {
+    font-size: 0.8rem;
+    margin: 0.4rem 0;
+    color: #888;
+    display: block;
+    font-weight: normal;
+}
+
+.events .thumbnail h3 a {
+    font-size: 0.6rem;
+    color: #C0C0C0;
+}
+
+.list-group {
+    width: 100%;
+}
+
+.list-group button span {
+    float: right;
+}
+
+.badge-primary {
+    border: #c5c5c5 1px solid;
+    color: #c5c5c5;
+    font-weight: 400;
+    background: none;
+}
+
+#section-network img {
+    height: 3rem;
+    margin: 0 2rem 1rem;
+}
+
+#section-contact {
+    text-align: center;
+}
+
+#section-contact form {
+    display: inline-block;
+}
+
+.footer {
+    padding: 2rem 0;
+    font-size: 1rem;
+    color: #888888;
+}
+
+.footer ul {
+    margin: 0;
+    float: right;
+}
+
+.footer .row {
+    margin: 0;
+}
+
+.welcome-container {
+    width: 100%;
+    max-width: 28em;
+    position: relative;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 48em) {
+	.header #welcome img{height: 10rem;}	
+	.navbar #logo {width: 10rem;}
+	#section-network img {margin: 2rem;}		
+    #read_seminar {
+        margin-top: 3rem;
+    }
+    .countdown .time {
+        height: 7rem;
+        width: 5rem;
+    }
+    .countdown .count {
+        font-size: 2.4rem;
+        line-height: 7rem
+    }
+    .countdown .label {
+        font-size: 0.8em;
+        top: 7.4rem;
+    }
+}
+
+@media screen and (max-width: 28rem) {
+    .badge {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 23.4rem) {
+    #navbarNav {
+        display: none !important;
+    }
+    .countdown .time {
+        height: 70px;
+        width: 48px;
+    }
+    .countdown .count {
+        font-size: 1.5em;
+        line-height: 70px;
+    }
+    .countdown .label {
+        font-size: 0.8em;
+        top: 72px;
+    }
+}
