@@ -38,6 +38,9 @@ a:hover{
 
 a:focus{outline: 0;}
 
+
+.btn:focus{box-shadow: none;}
+
 .header {
     width: 100vw;
     height: 100vh;
