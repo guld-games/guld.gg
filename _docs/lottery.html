@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Guld Games Documents</title>
+
+    <meta property="og:url" content="https://guld.gg" />
+    <meta property="og:image" content="http://guld.gg/img/og.jpg" />
+    <meta property="og:title" content="Guld Games" />
+    <meta property="og:description" content="A group of competitive gamers who track their results on the GG ledger" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #000;
+            font-weight: 300;
+        }
+
+		h1,h2,h3,h4,h5,h6 {
+		    color: #333;
+		    font-weight: 300;
+		}
+
+        h3 {
+            margin-bottom: 1rem;
+        }
+        
+		pre {
+		    padding: 16px;
+		    overflow: auto;
+		    font-size: 85%;
+		    line-height: 1.45;
+		    background-color: #f6f8fa;
+		    border-radius: 3px;
+		}
+		
+        .container {
+            padding: 0;
+        }
+
+        .btn-primary:not([href]):not([tabindex]),
+        .btn-primary:not([href]):not([tabindex]):visited {
+            color: #fff;
+            background-color: #744f92;
+            border-color: #54356d;
+        }
+
+        .btn-primary:not([href]):not([tabindex]):active,
+        .btn-primary:not([href]):not([tabindex]):hover {
+            color: #fff;
+            background-color: #4d2e66;
+            border-color: #54356d;
+        }
+
+        a {
+            color: #203990;
+        }
+
+        .sticky-top {
+            background: #fff;
+            border-bottom: 1px solid #c7b9d4;
+        }
+
+        .navbar-brand {
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+            font-weight: 200;
+        }
+
+		.navbar {background: #000;}
+
+        .navbar #logo {
+            width: 15rem;
+            margin-right: 0.2rem;
+        }
+
+        .navbar a {
+            color: #fff !important;
+        }
+
+        .header #text {
+            text-align: center;
+            font-size: 1.3rem;
+            padding: 0.6rem 0;
+            color: #fff;
+            font-weight: 300;
+            opacity: 0.9;
+            display: inline-block;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        #content {
+            margin-top: 2rem;
+        }
+
+        .list-group ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .list-group li {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .heading {
+            margin-top: 1.8rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            color: #464a4c8c;
+            text-transform: capitalize;
+        }
+
+        .list-group li a {
+            padding: .75rem 1.25rem;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .125);
+            width: 100%;
+            color: #464a4c;
+            text-align: inherit;
+            text-transform: capitalize;
+        }
+
+        .list-group li:first-child a {
+            border-top-right-radius: .25rem;
+            border-top-left-radius: .25rem;
+        }
+
+        .list-group li:last-child a {
+            margin-bottom: 2rem;
+            border-bottom-right-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+
+        .list-group li a.active {
+            z-index: 2;
+            color: #fff;
+            background-color: #3c3e3d;
+            border-color: #3c3e3d;
+        }
+
+        .list-group li a:focus,
+        .list-group li a:hover {
+            color: #464a4c;
+            text-decoration: none;
+            background-color: #f7f7f9;
+        }
+
+        .language-sudo {
+            color: #ca4147;
+        }
+
+        #cover {
+            width: 100%;
+            height: 100%;
+            page-break-after: always;
+            position: relative;
+            text-align: center;
+            font-size: 10rem;
+            font-weight: 200;
+            padding-top: 40%;
+        }
+
+        #cover img {
+            width: 40%;
+        }
+
+        #cover ul {
+            list-style-type: none;
+        }
+
+        #cover a {
+            display: none;
+        }
+
+        #cover a.active {
+            color: #b6b4b4;
+            position: relative;
+            top: -1rem;
+            font-size: 6rem;
+            display: block;
+            text-transform: capitalize;
+        }
+
+        #cover .heading {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cover" class="d-print-block">
+        <img id="logo" src="img/logo.svg" class="img-responsive" alt="Guld Games">
+        <ul>
+<li><a class="" href="gg-agreement.html">gg agreement</a></li>
+<li><a class="active" href="lottery.html">lottery</a></li>
+<li><a class="" href="odd-or-even.html">odd or even</a></li>
+<li><a class="" href="poker-agreement.html">poker agreement</a></li>
+</ul>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand d-print-none">
+        <div class="container">
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <img id="logo" src="img/logo.svg" class="img-responsive" alt="Guld Games">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        Contracts
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- .nav -->
+
+    <section id="content" class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
+                <div class="list-group">
+                    <ul>
+<li><a class="" href="gg-agreement.html">gg agreement</a></li>
+<li><a class="active" href="lottery.html">lottery</a></li>
+<li><a class="" href="odd-or-even.html">odd or even</a></li>
+<li><a class="" href="poker-agreement.html">poker agreement</a></li>
+</ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div>
+                    <h1>Lottery Game Agreement</h1>
+<p>Agreement made _________ (date), between _____________________, known by signing key _____________________________ (public key), in this agreement referred to as DEALER, and _______________, known by signing key ________________________ (public key), in this agreement referred to as PLAYER.</p>
+<h3>1) OBJECTIVE</h3>
+<p>The DEALER first establishes how much the PLAYER will wager, known as the BET. The DEALER then chooses a maximum number between <code>1</code> and <code>65535</code> known as the MAX. The DEALER must deposit BET multiplied by MAX to the contact.</p>
+<p>The DEALER then picks a second number between <code>0</code> and MAX, known as the SECRET. Without knowning SECRET, PLAYER guesses a number between <code>0</code> and MAX. If PLAYER guessed correctly, they win their BET multiplied by MAX, otherwise the DEALER wins BET.</p>
+<h3>2) GAME PLAY</h3>
+<p>WHEREAS ___________________ (game name) hearafter referred to as GINSTANCE is the name of a unique game of Lottery.</p>
+<pre><code class="language-bash">GINSTANCE=''
+</code></pre>
+<p>WHEREAS PLAYER has deposited ____________ (GG amount) hearafter referred to as BET to the GINSTANCE contract.</p>
+<pre><code class="language-bash">BET=''
+</code></pre>
+<p>WHEREAS DEALER has chosen a maximum number of ____________ (natural number less than 65535) hearafter referred to as MAX.</p>
+<pre><code class="language-bash">MAX=''
+</code></pre>
+<p>WHEREAS DEALER has deposited an amount of GG equal to BET multiplied by MAX to the GINSTANCE contract.</p>
+<h5>2.1) DEALER PICKS SECRET</h5>
+<p>DEALER picks a number between <code>0</code> and MAX.</p>
+<pre><code class="language-bash">SECRET=$( shuf -i 0-$MAX -n 1 )
+</code></pre>
+<h5>2.2) DEALER SIGNS SECRET</h5>
+<p>DEALER signs SECRET for this specific GINSTANCE, but does not show it to the other, yet.</p>
+<pre><code class="language-bash">signum=$(printf &quot;%s:%s&quot; &quot;$GINSTANCE&quot; &quot;$SECRET&quot; | gpg --clearsign)
+</code></pre>
+<h5>2.3) DEALER HASHES SIGNED SECRET</h5>
+<p>DEALER hashes their signature of SECRET, and sends the hash to PLAYER. This allows PLAYER to have proof that SECRET was already fixed.</p>
+<pre><code class="language-bash">hashnum=$(echo $signum | sha512sum | tr -d -)
+</code></pre>
+<h5>2.4) PLAYER SIGNS DEALER HASH</h5>
+<p>By signing the DEALER’s SECRET hash, PLAYER acknowledges that SECRET is locked in and known only to DEALER.</p>
+<pre><code class="language-bash">sighash=$(echo $hashnum | gpg --clearsign)
+</code></pre>
+<h5>2.5) PLAYER PICKS GUESS</h5>
+<p>PLAYER chooses what they think the SECRET is.</p>
+<pre><code class="language-bash">GUESS=0
+</code></pre>
+<h5>2.6 PLAYER SIGNS GUESS</h5>
+<p>PLAYER signs the GUESS, sharing the signature with the DEALER.</p>
+<pre><code class="language-bash">sigchoice=$(printf &quot;%s:%s&quot; &quot;$GINSTANCE&quot; &quot;$GUESS&quot; | gpg --clearsign)
+</code></pre>
+<h5>2.7 REVEAL</h5>
+<p>Finally, the DEALER reveals the secret. If the GUESS is equal to the SECRET, the PLAYER wins, otherwise the DEALER wins.</p>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
