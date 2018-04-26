@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Guld Games Documents</title>
+
+    <meta property="og:url" content="https://guld.gg" />
+    <meta property="og:image" content="http://guld.gg/img/og.jpg" />
+    <meta property="og:title" content="Guld Games" />
+    <meta property="og:description" content="A group of competitive gamers who track their results on the GG ledger" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #000;
+            font-weight: 300;
+        }
+
+		h1,h2,h3,h4,h5,h6 {
+		    color: #333;
+		    font-weight: 300;
+		}
+
+        h3 {
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            padding: 0;
+        }
+
+        .btn-primary:not([href]):not([tabindex]),
+        .btn-primary:not([href]):not([tabindex]):visited {
+            color: #fff;
+            background-color: #744f92;
+            border-color: #54356d;
+        }
+
+        .btn-primary:not([href]):not([tabindex]):active,
+        .btn-primary:not([href]):not([tabindex]):hover {
+            color: #fff;
+            background-color: #4d2e66;
+            border-color: #54356d;
+        }
+
+        a {
+            color: #203990;
+        }
+
+        .sticky-top {
+            background: #fff;
+            border-bottom: 1px solid #c7b9d4;
+        }
+
+        .navbar-brand {
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+            font-weight: 200;
+        }
+
+		.navbar {background: #000;}
+
+        .navbar #logo {
+            width: 15rem;
+            margin-right: 0.2rem;
+        }
+
+        .navbar a {
+            color: #fff !important;
+        }
+
+        .header #text {
+            text-align: center;
+            font-size: 1.3rem;
+            padding: 0.6rem 0;
+            color: #fff;
+            font-weight: 300;
+            opacity: 0.9;
+            display: inline-block;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        #content {
+            margin-top: 2rem;
+        }
+
+        .list-group ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .list-group li {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .heading {
+            margin-top: 1.8rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            color: #464a4c8c;
+            text-transform: capitalize;
+        }
+
+        .list-group li a {
+            padding: .75rem 1.25rem;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .125);
+            width: 100%;
+            color: #464a4c;
+            text-align: inherit;
+            text-transform: capitalize;
+        }
+
+        .list-group li:first-child a {
+            border-top-right-radius: .25rem;
+            border-top-left-radius: .25rem;
+        }
+
+        .list-group li:last-child a {
+            margin-bottom: 2rem;
+            border-bottom-right-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+
+        .list-group li a.active {
+            z-index: 2;
+            color: #fff;
+            background-color: #3c3e3d;
+            border-color: #3c3e3d;
+        }
+
+        .list-group li a:focus,
+        .list-group li a:hover {
+            color: #464a4c;
+            text-decoration: none;
+            background-color: #f7f7f9;
+        }
+
+        .language-sudo {
+            color: #ca4147;
+        }
+
+        #cover {
+            width: 100%;
+            height: 100%;
+            page-break-after: always;
+            position: relative;
+            text-align: center;
+            font-size: 10rem;
+            font-weight: 200;
+            padding-top: 40%;
+        }
+
+        #cover img {
+            width: 40%;
+        }
+
+        #cover ul {
+            list-style-type: none;
+        }
+
+        #cover a {
+            display: none;
+        }
+
+        #cover a.active {
+            color: #b6b4b4;
+            position: relative;
+            top: -1rem;
+            font-size: 6rem;
+            display: block;
+            text-transform: capitalize;
+        }
+
+        #cover .heading {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cover" class="d-print-block">
+        <img id="logo" src="img/logo.svg" class="img-responsive" alt="Guld Games">
+        <ul>
+<li><a class="active" href="gg-agreement.html">GG agreement</a></li>
+<li><a class="" href="lottery.html">lottery</a></li>
+<li><a class="" href="odd-or-even.html">odd or even</a></li>
+<li><a class="" href="poker-agreement.html">poker agreement</a></li>
+</ul>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand d-print-none">
+        <div class="container">
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <img id="logo" src="img/logo.svg" class="img-responsive" alt="Guld Games">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        Contracts
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- .nav -->
+
+    <section id="content" class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
+                <div class="list-group">
+                    <ul>
+<li><a class="active" href="gg-agreement.html">GG agreement</a></li>
+<li><a class="" href="lottery.html">lottery</a></li>
+<li><a class="" href="odd-or-even.html">odd or even</a></li>
+<li><a class="" href="poker-agreement.html">poker agreement</a></li>
+</ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div>
+                    <h1>Guld Games Agreement</h1>
+<p>Agreement made _________ (date), by ______________________ (name) known as MEMBER using signing key _____________________________ (key fingerprint) to join the gg group hearafter referred to as GROUP.</p>
+<pre><code>GROUP = gg
+FINGERPRINT =
+MEMBER =
+</code></pre>
+<h3>Governance</h3>
+<p>The GROUP will be governed in a Proof of Stake model. Members of gg group can stake GG to their <code>gg:Equity</code> sub-account. Each GG staked in this manner equals 1 vote on the contents of the gg branch.</p>
+<pre><code># TODO vote counting function
+</code></pre>
+<p>Changes to this document, or other game contracts requires at minimum 51% of <code>gg:Equity</code> approval.</p>
+<h3>Economics</h3>
+<h5>Future Price Database</h5>
+<ul>
+<li>Blocktree path: /gg/ledger/prices/gg.db</li>
+<li><a href="https://github.com/guld-games/token-prices/blob/master/gg.db">Public mirror</a></li>
+</ul>
+<p>The official rate for GULD to GG, known hereafter as BURNRATE, is published in the blocktree at <code>/gg/ledger/prices/gg.db</code>. These prices require <code>75%</code> approval of <code>gg:Equity</code> to change.</p>
+<p>BURNRATE starts at 7100 GG per GULD burned. The appreciation schedule is set for the next 40 years, after which it plateaus at 1:1.</p>
+<h3>Transactions Templates</h3>
+<p>All templates assume the following conditions.</p>
+<p>WHEREAS DATE &amp; TIME are the UTC date and timestamp at signing time.</p>
+<p>WHEREAS GAME is a known game rule set i.e. TEXAS HOLD’EM.</p>
+<p>WHEREAS GAME-INSTANCE is an officially tracked instance of GAME.</p>
+<h5>Burn</h5>
+<p>WHEREAS MEMBER is a member in good standing of the <code>guld</code> group.</p>
+<p>MEMBER may burn GULD and receive a credit for future guld games.</p>
+<p>WHEREAS AMOUNT is a positive number of GULD.</p>
+<pre><code class="language-ledger">DATE * register group
+    ; timestamp: TIME
+    MEMBER:Assets   -AMOUNT GULD
+    MEMBER:Expenses:guld:register   AMOUNT GULD
+    guld:Liabilities   AMOUNT GULD
+    guld:Income:register:group:gg:MEMBER   -AMOUNT GULD
+</code></pre>
+<h5>Claim Burn</h5>
+<p>Once MEMBER has burned GULD for the <code>gg</code> group, anyone may create the corresponding <code>GG</code> issuance, and transfer into MEMBER’s <code>MEMBER:Assets</code> account.</p>
+<p>Any burned GULD available in the <code>guld:Income:register:group:gg:MEMBER</code> account to GAME-INSTANCE must be converted at the BURNRATE at TIME.</p>
+<p>WHEREAS AMOUNT is a positive number of GULD.</p>
+<p>WHEREAS GGAMOUNT is equal to AMOUNT * BURNRATE.</p>
+<pre><code class="language-ledger">DATE * claim burn
+    ; timestamp: TIME
+    guld:Income:register:group:gg:MEMBER    AMOUNT GULD
+    guld:Income:register:group:gg    -AMOUNT GULD
+    MEMBER:Assets   GGAMOUNT GG
+    gg:Liabilities    -GGAMOUNT GG
+</code></pre>
+<h5>Funding</h5>
+<p>WHEREAS GAME is a known game rule set i.e. TEXAS HOLD’EM.</p>
+<p>WHEREAS GAME-INSTANCE is an officially tracked instance of GAME.</p>
+<p>WHEREAS AMOUNT is a positive number of GG.</p>
+<pre><code class="language-ledger">DATE * GG funding
+    ; timestamp: TIME
+    MEMBER:Assets    -AMOUNT GG
+    gg:Games:GAME:GAME-INSTANCE    AMOUNT GG
+</code></pre>
+<h5>Transfer</h5>
+<p>The MEMBER is allowed to send GG from their own <code>MEMBER:Assets</code> account to any other <code>gg:Assets</code> account known as OTHER for this clause.</p>
+<p>WHEREAS AMOUNT is a positive number of GG, and MEMBER has at least AMOUNT in <code>MEMBER:Assets</code>.</p>
+<pre><code class="language-ledger">DATE * GG transfer
+    ; timestamp: TIME
+    MEMBER:Assets   -AMOUNT GG
+    OTHER:Assets    AMOUNT GG
+</code></pre>
+<h5>Claim Win (Optional Stake)</h5>
+<p>The MEMBER is allowed to send GG from any game winning contract into their Assets and/or staking account.</p>
+<p>WHEREAS MEMBER was a winner of GAME-INSTANCE.</p>
+<p>WHEREAS STAKE_AMOUNT is less than or equal to the minimum bet for GAME-INSTANCE.</p>
+<p>WHEREAS AMOUNT is the total winnings minus STAKE_AMOUNT</p>
+<pre><code class="language-ledger">DATE * GG claim win
+    ; timestamp: TIME
+    gg:Games:GAME:GAME-INSTANCE    -AMOUNT GG
+    MEMBER:Assets    -AMOUNT GG
+    gg:Games:GAME:GAME-INSTANCE    -STAKE_AMOUNT GG
+    gg:Equity:MEMBER    -STAKE_AMOUNT GG
+</code></pre>
+<h5>Unstake</h5>
+<p>The MEMBER is allowed to unstake at any time, into a qualifying game contract.</p>
+<p>WHEREAS DATE &amp; TIME are the UTC date and timestamp at signing time.</p>
+<p>WHEREAS GAME is a known game rule set i.e. TEXAS HOLD’EM.</p>
+<p>WHEREAS GAME-INSTANCE is an officially tracked instance of GAME.</p>
+<p>WHEREAS AMOUNT is less than or equal to the balance of <code>gg:Equity:MEMBER</code>.</p>
+<pre><code class="language-ledger">DATE * GG unstake
+    ; timestamp: TIME
+    gg:Equity:MEMBER    -AMOUNT GG
+    gg:Games:GAME:GAME-INSTANCE    AMOUNT GG
+</code></pre>
+<p>The MEMBER is also allowed to unstake at any time, directly into their Assets account.</p>
+<pre><code class="language-ledger">DATE * GG unstake
+    ; timestamp: TIME
+    gg:Equity:MEMBER    -AMOUNT GG
+    MEMBER:Assets    AMOUNT GG
+</code></pre>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>

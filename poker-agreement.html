@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Guld Games Documents</title>
+
+    <meta property="og:url" content="https://guld.gg" />
+    <meta property="og:image" content="http://guld.gg/img/og.jpg" />
+    <meta property="og:title" content="Guld Games" />
+    <meta property="og:description" content="A group of competitive gamers who track their results on the GG ledger" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #000;
+            font-weight: 300;
+        }
+
+		h1,h2,h3,h4,h5,h6 {
+		    color: #333;
+		    font-weight: 300;
+		}
+
+        h3 {
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            padding: 0;
+        }
+
+        .btn-primary:not([href]):not([tabindex]),
+        .btn-primary:not([href]):not([tabindex]):visited {
+            color: #fff;
+            background-color: #744f92;
+            border-color: #54356d;
+        }
+
+        .btn-primary:not([href]):not([tabindex]):active,
+        .btn-primary:not([href]):not([tabindex]):hover {
+            color: #fff;
+            background-color: #4d2e66;
+            border-color: #54356d;
+        }
+
+        a {
+            color: #203990;
+        }
+
+        .sticky-top {
+            background: #fff;
+            border-bottom: 1px solid #c7b9d4;
+        }
+
+        .navbar-brand {
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+            font-weight: 200;
+        }
+
+		.navbar {background: #000;}
+
+        .navbar #logo {
+            width: 15rem;
+            margin-right: 0.2rem;
+        }
+
+        .navbar a {
+            color: #fff !important;
+        }
+
+        .header #text {
+            text-align: center;
+            font-size: 1.3rem;
+            padding: 0.6rem 0;
+            color: #fff;
+            font-weight: 300;
+            opacity: 0.9;
+            display: inline-block;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        #content {
+            margin-top: 2rem;
+        }
+
+        .list-group ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .list-group li {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .heading {
+            margin-top: 1.8rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            color: #464a4c8c;
+            text-transform: capitalize;
+        }
+
+        .list-group li a {
+            padding: .75rem 1.25rem;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .125);
+            width: 100%;
+            color: #464a4c;
+            text-align: inherit;
+            text-transform: capitalize;
+        }
+
+        .list-group li:first-child a {
+            border-top-right-radius: .25rem;
+            border-top-left-radius: .25rem;
+        }
+
+        .list-group li:last-child a {
+            margin-bottom: 2rem;
+            border-bottom-right-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+
+        .list-group li a.active {
+            z-index: 2;
+            color: #fff;
+            background-color: #3c3e3d;
+            border-color: #3c3e3d;
+        }
+
+        .list-group li a:focus,
+        .list-group li a:hover {
+            color: #464a4c;
+            text-decoration: none;
+            background-color: #f7f7f9;
+        }
+
+        .language-sudo {
+            color: #ca4147;
+        }
+
+        #cover {
+            width: 100%;
+            height: 100%;
+            page-break-after: always;
+            position: relative;
+            text-align: center;
+            font-size: 10rem;
+            font-weight: 200;
+            padding-top: 40%;
+        }
+
+        #cover img {
+            width: 40%;
+        }
+
+        #cover ul {
+            list-style-type: none;
+        }
+
+        #cover a {
+            display: none;
+        }
+
+        #cover a.active {
+            color: #b6b4b4;
+            position: relative;
+            top: -1rem;
+            font-size: 6rem;
+            display: block;
+            text-transform: capitalize;
+        }
+
+        #cover .heading {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cover" class="d-print-block">
+        <img id="logo" src="img/logo.svg" class="img-responsive" alt="Guld Games">
+        <ul>
+<li><a class="" href="gg-agreement.html">GG agreement</a></li>
+<li><a class="" href="lottery.html">lottery</a></li>
+<li><a class="" href="odd-or-even.html">odd or even</a></li>
+<li><a class="active" href="poker-agreement.html">poker agreement</a></li>
+</ul>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand d-print-none">
+        <div class="container">
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <img id="logo" src="img/logo.svg" class="img-responsive" alt="Guld Games">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        Contracts
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- .nav -->
+
+    <section id="content" class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-6 col-md-3 sidebar-offcanvas d-print-none" id="sidebar">
+                <div class="list-group">
+                    <ul>
+<li><a class="" href="gg-agreement.html">GG agreement</a></li>
+<li><a class="" href="lottery.html">lottery</a></li>
+<li><a class="" href="odd-or-even.html">odd or even</a></li>
+<li><a class="active" href="poker-agreement.html">poker agreement</a></li>
+</ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div>
+                    <h1>Texas Hold’em Poker Agreement</h1>
+<p>Agreement made on __________(date), between __________(username), known by signing key __________(public-key), hereinafter referred to as PLAYER, and __________(username), known by signing key __________(public-key), hereinafter referred to as DEALER.</p>
+<h2>Joining the game</h2>
+<p>WHEREAS __________(game-name), hereinafter referred to as GINSTANCE is the name of a unique game of Texas Holdem Poker, consisting of 2 to 10 players.</p>
+<pre><code>GIINSTANCE=''
+</code></pre>
+<p>PLAYER is allowed to join a game by transfering 1 buy-in fee of __________(buy-in) GG , hereinafter refered to as BUYIN, or 1 re-buy fee of __________(re-buy) GG into the GINSTANCE contract.</p>
+<pre><code>BUYIN=''
+</code></pre>
+<pre><code>REBUY=''
+</code></pre>
+<p>PLAYER is only allowed 1 BUYIN and 1 REBUY.</p>
+<h2>Objective</h2>
+<p>The objective of the game is for PLAYER to collect all chips in the table.</p>
+<p>Chips are collected by either having the best hand possible using any combination of your two cards and the five community cards on the table, which are dealt by DEALER, or by winning the corresponding bet in a hand.</p>
+<h2>Hands</h2>
+<p>You can use both, one or none of your own hole cards in making your best hand.</p>
+<p>Poker hand rankings used in this game are the following:</p>
+<ol>
+<li>Straight flush</li>
+<li>Four of a kind</li>
+<li>Full house</li>
+<li>Flush</li>
+<li>Straight</li>
+<li>Three of a kind</li>
+<li>Two pair</li>
+<li>One pair</li>
+<li>High card</li>
+</ol>
+<h2>The Dealer</h2>
+<p>PLAYER agrees that DEALER will receive __________(dealer-fee) % of the total buy-in fees deposited into the GINSTANCE contract, hereinafter refered to as DEALER-FEE.</p>
+<pre><code>DEALER-FEE=''
+</code></pre>
+<p>DEALER agrees to follow procedures according to the following wikihow article: <a href="https://www.wikihow.com/Shuffle-and-Deal-Texas-Holdem">https://www.wikihow.com/Shuffle-and-Deal-Texas-Holdem</a>.</p>
+<p>The general guidelines to dealing, are the following:</p>
+<ol>
+<li>
+<p>The cards are always shuffled before dealing.</p>
+</li>
+<li>
+<p>After shuffling twice, the deck is stripped by taking off approximately 1/3 of the top of the cards, which are then set on the table. The middle section is then placed on top. Finally the bottom third is placed on top of the others.</p>
+</li>
+<li>
+<p>The cards are shuffled again.</p>
+</li>
+<li>
+<p>The deck is then cut onto the ‘cut card’ and the dealer may deal the cards.</p>
+</li>
+</ol>
+<h4>Auto-shuffle</h4>
+<p>Dealer is optionally allowed to use an automatic shuffling machine instead of steps 1-3 above.</p>
+<h2>Blinds</h2>
+<p>Big blind is established at 1% of the buy-in and increases by that same amount everytime the dealer button has made one full table rotation.</p>
+<p>Small blind is imposed on the player left to the dealer button and big blind to the player left of the small blind.</p>
+<h2>Betting</h2>
+<p>The minimum bet is equal to the size of the big blind, hereinafter refer to as MINIMUM-BET.</p>
+<p>The maximum bet is the total amount of all of your chips, hereinafter refered to as MAXIMUM-BET.</p>
+<h2>Raising</h2>
+<p>Once a bet has been made, the minimum you can raise is the size of the last bet.</p>
+<h2>Starting chips</h2>
+<p>PLAYER gets the exact amount of starting chips as every other player.</p>
+<p>Distribution and denomination of starting chips is determined by majority consensus at the table.</p>
+<h2>Game Play</h2>
+<p>The game starts when DEALER deals two cards to each PLAYER, hereinafter referred to as the PRE-FLOP.</p>
+<p>Betting begins with the player to the left of the small blind, which has to either CALL the bet, RAISE or FOLD.</p>
+<h3>The Flop</h3>
+<p>Once the preflop betting round ends, the DEALER deals 1 card facedown and deals 3 community cards faceup, hereinafeter refered to as THE-FLOP.</p>
+<p>Once THE-FLOP has been dealt, the first post-flop betting round begins.</p>
+<p>The rules of a post-flop betting round are the same as pre-flop, with two excpetions: (i) the first player to act is the next player with a hand to the left of the dealer; (b) the first player to act can check or bet.</p>
+<h3>The Turn</h3>
+<p>Once the betting round on THE-FLOP completes, DEALER deals 1 card facedown followed by a 1 community card faceup, hereinafter referred to as THE-TURN.</p>
+<p>This betting round is identical to THE-FLOP betting round, except that the MINIMUM-BET for this round is multiplied by 2.</p>
+<h3>The River</h3>
+<p>If at least two players remain playing the hand, DEALER deals 1 card facedown followed by 1 community card faceup, hereinafter referred to as THE-RIVER.</p>
+<p>This is the last card dealt in this hand by the DEALER.</p>
+<p>The betting round is identical to THE-TURN.</p>
+<h3>Showdown</h3>
+<p>Once the river betting round has been completed, the DEALER can now determine which player has the best hand, according to the following rules:</p>
+<ol>
+<li>The player who bet on the river is the default first player to reveal their hand.</li>
+<li>If no betting happened, the player closest to the left of the dealer must show their hand first, continuing clockwise around the table.</li>
+<li>PLAYER holding a losing hand can choose not to reveal their cards and concede the pot.</li>
+</ol>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
