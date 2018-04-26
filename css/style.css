@@ -17,9 +17,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 300;
 }
 
-h3 {
-    margin-bottom: 1rem;
-}
+h3 {margin-bottom: 1rem;}
 
 .btn-primary {
     color: #fff;
@@ -31,9 +29,7 @@ h3 {
     border-color: #4c3b5a;
 }
 
-a {
-	color: #3a0a5c;
-}
+a {color: #3a0a5c;}
 
 a:hover{
 	color: #932de1;
@@ -54,17 +50,11 @@ section.fw{
 	width: 100vw;
 }
 
-.navbar {
-    background: #000;
-}
+.navbar {background: #000;}
 
-.navbar-light .navbar-toggler {
-    background: rgba(251, 251, 251, 0.8);
-}
+.navbar-light .navbar-toggler {background: rgba(251, 251, 251, 0.8);}
 
-.navbar #logo {
-    width: 15rem;
-}
+.navbar #logo {width: 15rem;}
 
 .header #ico {
     opacity: 0.9;
@@ -99,9 +89,7 @@ section.fw{
     border-color: #ffffff;
 }
 
-.header #welcome img{
-	height: 15rem;
-}
+.header #welcome img{height: 15rem;}
 
 #social {
     position: absolute;
@@ -143,17 +131,11 @@ section.fw{
     }
 }
 
-#social #telegram {
-    padding: 0.6rem 0.5rem;
-}
+#social #telegram {padding: 0.6rem 0.5rem;}
 
-#social #facebook {
-    padding: 0.6rem 0.9rem;
-}
+#social #facebook {padding: 0.6rem 0.9rem;}
 
-#read_seminar {
-    margin-top: 4rem;
-}
+#read_seminar {margin-top: 4rem;}
 /* Keeping countdown CSS in case we need it to countdown to the Launch Party */
 .countdown {
     text-align: center;
@@ -274,7 +256,6 @@ section.fw{
 }
 
 /* Animation start */
-
 .countdown .count.curr.top {
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
@@ -294,7 +275,6 @@ section.fw{
 }
 
 /* Animation end */
-
 .countdown .flip .count.curr.top {
     -webkit-transition: all 250ms ease-in-out;
     -moz-transition: all 250ms ease-in-out;
@@ -356,13 +336,9 @@ a.nav-link {
     margin: -0.4rem 0 0 0;
 }
 
-section {
-    padding: 4rem 0;
-}
+section {padding: 4rem 0;}
 
-.events {
-    text-align: center;
-}
+.events {text-align: center;}
 
 .events .thumbnail {
     padding: 0;
@@ -371,25 +347,12 @@ section {
     margin-bottom: 2rem;
 }
 
-.events .thumbnail a:hover {
-    text-decoration: none;
-}
+.events .thumbnail a:hover {text-decoration: none;}
 
-.events .thumbnail .website {
-    display: none;
-}
+.events .thumbnail .website, .events .thumbnail:hover .title {display: none;}
 
-.events .thumbnail:hover .website {
-    display: block;
-}
+.events .thumbnail .website .title, .events .thumbnail:hover .website {display: block;}
 
-.events .thumbnail .website .title {
-    display: block;
-}
-
-.events .thumbnail:hover .title {
-    display: none;
-}
 
 .thumbnail img {
     object-fit: cover;
@@ -418,13 +381,9 @@ section {
     color: #C0C0C0;
 }
 
-.list-group {
-    width: 100%;
-}
+.list-group {width: 100%;}
 
-.list-group button span {
-    float: right;
-}
+.list-group button span {float: right;}
 
 .badge-primary {
     border: #c5c5c5 1px solid;
@@ -438,13 +397,9 @@ section {
     margin: 0 2rem 1rem;
 }
 
-#section-contact {
-    text-align: center;
-}
+#section-contact {text-align: center;}
 
-#section-contact form {
-    display: inline-block;
-}
+#section-contact form {display: inline-block;}
 
 .footer {
     padding: 2rem 0;
@@ -457,9 +412,7 @@ section {
     float: right;
 }
 
-.footer .row {
-    margin: 0;
-}
+.footer .row {margin: 0;}
 
 .welcome-container {
     width: 100%;
@@ -490,9 +443,7 @@ section {
 }
 
 @media screen and (max-width: 28rem) {
-    .badge {
-        display: none !important;
-    }
+    .badge {display: none !important;}
 }
 
 @media screen and (max-width: 23.4rem) {
