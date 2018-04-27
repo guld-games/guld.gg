@@ -324,8 +324,8 @@ a.nav-link {
     font-weight: 300;
 }
 
-.gray-bg {
-    background-color: #f0f1f3;
+.black-bg {
+    background-color: #000;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
 }
