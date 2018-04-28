@@ -6,6 +6,10 @@ Author: Rio Myers
 Website: https://riomyers.com
 Disclaimer: Some website components were copied from Guld.io template, originally designed by Chriss Mejía, https://chrissmejia.com
 */
+html,* {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -51,21 +55,12 @@ section.fw{height: 100vh;width: 100vw;}
 
 .navbar {background: #000;}
 
-.navbar-light .navbar-toggler {background: rgba(251, 251, 251, 0.8);}
-
 .navbar #logo {width: 15rem;}
-
-.header #ico {
-    opacity: 0.9;
-    height: 10rem;
-    display: block;
-    margin: 0 auto;
-}
 
 .header .text {
     color: #fff;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -90,10 +85,172 @@ section.fw{height: 100vh;width: 100vw;}
 
 .header #welcome img{height: 15rem;}
 
+.welcome-container {
+    width: 100vw;
+    max-width: 28em;
+    position: relative;
+    margin: 0 auto;
+}
+/* SlideIn Animation */
+.slideIn.intro-content * {
+  opacity: 1;
+}
+
+.slideIn.intro-content .content-wrapper {
+  position: relative;
+  width: 100vw;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 2em 0;
+  overflow: hidden;
+}
+.slideIn.intro-content .content-wrapper::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 10vh;
+  left: 0;
+  height: 100vh;
+  /* vertical bar */  
+/*
+  width: .05rem;
+  background-color: #fff;
+  -webkit-animation: pulse 1.3s 0.3s both;
+  -moz-animation: pulse 1.3s 0.3s both;
+  animation: pulse 1.3s 0.3s both;
+*/
+}
+.slideIn.intro-content .content-wrapper > div {
+  /* wrap the entire content */
+  position: relative;
+  z-index: 1;
+}
+
+.slideIn.intro-content .content-wrapper,
+.slideIn.intro-content .content-wrapper > div {
+  -webkit-animation-duration: 1.73s;
+  -moz-animation-duration: 1.73s;
+  animation-duration: 1.73s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.slideIn.intro-content .content-wrapper {
+  -webkit-animation-name: mask-wrapper;
+  -moz-animation-name: mask-wrapper;
+  animation-name: mask-wrapper;
+}
+
+.slideIn.intro-content .content-wrapper > div {
+  -webkit-animation-name: mask-content;
+  -moz-animation-name: mask-content;
+  animation-name: mask-content;
+}
+
+@-webkit-keyframes mask-wrapper {
+  0% {
+    -webkit-transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes mask-wrapper {
+  0% {
+    -moz-transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes mask-wrapper {
+  0% {
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes mask-content {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes mask-content {
+  0% {
+    -moz-transform: translateX(-100%);
+  }
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes mask-content {
+  0% {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes pulse {
+  0%, 30.8% {
+    opacity: 0;
+  }
+  15.4%, 46.2%, 61.5%, 70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes pulse {
+  0%, 30.8% {
+    opacity: 0;
+  }
+  15.4%, 46.2%, 61.5%, 70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0%, 30.8% {
+    opacity: 0;
+  }
+  15.4%, 46.2%, 61.5%, 70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #social {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+	margin-top: 1rem;
     text-align: center;
 }
 
@@ -109,8 +266,6 @@ section.fw{height: 100vh;width: 100vw;}
     color: #ababab;
     top: 0;
     position: relative;
-    animation: social-show 1s;
-    -webkit-animation: social-show 1s;
 }
 
 #social a:hover,
@@ -119,22 +274,10 @@ section.fw{height: 100vh;width: 100vw;}
     border: 2px #d1d1d1 solid;
 }
 
-@keyframes social-show {
-    from {
-        top: 8rem;
-        opacity: 0;
-    }
-    to {
-        top: 0;
-        opacity: 1;
-    }
-}
-
 #social #telegram {padding: 0.6rem 0.5rem;}
 
 #social #facebook {padding: 0.6rem 0.9rem;}
 
-#read_seminar {margin-top: 4rem;}
 /* Keeping countdown CSS in case we need it to countdown to the Launch Party */
 .countdown {
     text-align: center;
@@ -307,15 +450,6 @@ a.nav-link {
     opacity: 0.8;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-    color: #fff;
-    font-weight: 500;
-    opacity: 1;
-}
-
 .section-title h1 {
     margin: 0 0 3rem 0;
     text-align: center;
@@ -324,8 +458,8 @@ a.nav-link {
     font-weight: 300;
 }
 
-.black-bg {
-    background-color: #000;
+.gray-bg {
+    background-color: #f0f1f3;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
 }
@@ -412,13 +546,6 @@ section {padding: 4rem 0;}
 }
 
 .footer .row {margin: 0;}
-
-.welcome-container {
-    width: 100%;
-    max-width: 28em;
-    position: relative;
-    margin: 0 auto;
-}
 
 @media screen and (max-width: 48em) {
 	.header #welcome img{height: 10rem;}	
