@@ -50,4 +50,6 @@ $(document).ready(function () {
     });
 
     $(window).resize();
+    
+    $(".yt").grtyoutube();
 });
