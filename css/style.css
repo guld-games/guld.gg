@@ -73,6 +73,7 @@ section.fw{height: 100vh;width: 100vw;}
 
 .header #welcome {
 	position: relative;
+	top: 3vh;
     text-align: center;
 }
 
