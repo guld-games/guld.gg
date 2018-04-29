@@ -9,7 +9,7 @@ jQuery(function ($) {
             e.preventDefault();
             var $anchor = $(this);
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 30 // scrolling fix
+                scrollTop: $($anchor.attr('href')).offset().top - 20 // scrolling fix
             }, 1500, 'easeInOutExpo');
         });
     }());

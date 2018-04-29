@@ -172,6 +172,14 @@ section.fw{height: 100vh;width: 100vw;}
   }
 }
 
+#events .col-sm-6{
+	margin-bottom: 3rem;
+}
+
+.bb{border-bottom: 1px solid black;}
+
+.mf{margin-top: 10px;}
+
 #social {
 	margin-top: 1rem;
     text-align: center;
