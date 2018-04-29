@@ -22,17 +22,17 @@ jQuery(function ($) {
 		        event.preventDefault();
 		        // Scroll Animation
 		        $('html, body').animate({
-		          scrollTop: target.offset().top - 20
-		        }, 1000, function() {
+		          scrollTop: target.offset().top - 20 //scroll position fix
+		        }, 737, function() {
 		          // Callback after animation
-		          // Must change focus!
+		          // Focus pocus!
 		          var $target = $(target);
 		          $target.focus();
 		          if ($target.is(":focus")) { // Check if the target was focused
 		            return false;
 		          } else {
 		            $target.attr('tabindex','-1'); // Adding tabindex for non focusable elements
-		            $target.focus(); // Set focus again
+		            $target.focus(); // Reset focus
 		          };
 		        });
 		      }
