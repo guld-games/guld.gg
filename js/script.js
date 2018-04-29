@@ -1,55 +1,48 @@
 jQuery(function ($) {
     'use strict';
-    // --------------------------------------------------------------------
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    // --------------------------------------------------------------------
-
     (function () {
-        $('a.page-scroll').on('click', function (e) {
-            e.preventDefault();
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 20 // scrolling fix
-            }, 1500, 'easeInOutExpo');
-        });
+		// Select all links with hashes
+		$('a[href*="#"]')
+		  // Ignore links that don't actually link to anything
+		  .not('[href="#"]')
+		  .not('[href="#0"]')
+		  .click(function(event) {
+		    // On-page links
+		    if (
+		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		      && 
+		      location.hostname == this.hostname
+		    ) {
+		      // Determine element to scroll to
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		      // Does a scroll target exist?
+		      if (target.length) {
+		        // Only prevent default if animation is actually gonna happen
+		        event.preventDefault();
+		        // Scroll Animation
+		        $('html, body').animate({
+		          scrollTop: target.offset().top - 20
+		        }, 1000, function() {
+		          // Callback after animation
+		          // Must change focus!
+		          var $target = $(target);
+		          $target.focus();
+		          if ($target.is(":focus")) { // Check if the target was focused
+		            return false;
+		          } else {
+		            $target.attr('tabindex','-1'); // Adding tabindex for non focusable elements
+		            $target.focus(); // Set focus again
+		          };
+		        });
+		      }
+		    }
+		  });
+		  // Youtube Popup  
+		  $(".yt").grtyoutube();
+		  //Close Navbar when link is clicked
+		  $('.navbar-nav>li>a,nav a').on('click', function(){
+		  	$('.navbar-collapse').collapse('hide');
+		  });
     }());
-
-    // --------------------------------------------------------------------
-    // Closes the Responsive Menu on Menu Item Click
-    // --------------------------------------------------------------------
-
-    (function () {
-        $('.navbar-collapse ul li a').on('click', function () {
-            if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
-                $('.navbar-toggle:visible').trigger('click');
-            }
-        });
-    }());
-
 }); // JQuery end
-
-$(document).ready(function () {
-    function welcomeCenter() {
-        var height = $(window).height();
-        var welcome = $('#welcome').outerHeight();
-        $('#background').height(height);
-
-        var free_space = height - welcome //- (welcome + 140);  // menu adjustment
-        free_space = free_space - (free_space * 0.1) // 0.1 of adjust to top
-        var off_top = (free_space / 2);
-        if (off_top < 1) {
-            off_top = 3;
-        }
-
-        $('#welcome').css("padding-top", off_top + "px");
-        $(".header").height(height);
-    }
-
-    $(window).resize(function () {
-        welcomeCenter();
-    });
-
-    $(window).resize();
-    
-    $(".yt").grtyoutube();
-});

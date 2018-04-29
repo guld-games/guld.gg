@@ -368,6 +368,7 @@ a.nav-link {
     font-weight: 400;
     text-shadow: 0 0 20px #000000;
     opacity: 0.8;
+    font-size: large;
 }
 
 .section-title h1 {
@@ -493,9 +494,6 @@ section {padding: 4rem 0;}
 }
 
 @media screen and (max-width: 23.4rem) {
-    #navbarNav {
-        display: none !important;
-    }
     .countdown .time {
         height: 70px;
         width: 48px;
