@@ -6,7 +6,7 @@ Author: Rio Myers
 Website: https://riomyers.com
 Disclaimer: Some website components were copied from Guld.io template, originally designed by Chriss Mejía, https://chrissmejia.com
 */
-html,* {
+html {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -73,7 +73,6 @@ section.fw{height: 100vh;width: 100vw;}
 
 .header #welcome {
 	position: relative;
-	top: -10vh;
     text-align: center;
 }
 
@@ -111,7 +110,7 @@ section.fw{height: 100vh;width: 100vw;}
   top: 10vh;
   left: 0;
   height: 100vh;
-  /* vertical bar */  
+  /* vertical bar */
 /*
   width: .05rem;
   background-color: #fff;
