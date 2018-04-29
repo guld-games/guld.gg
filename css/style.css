@@ -127,113 +127,33 @@ section.fw{height: 100vh;width: 100vw;}
 
 .slideIn.intro-content .content-wrapper,
 .slideIn.intro-content .content-wrapper > div {
-  -webkit-animation-duration: 1.73s;
-  -moz-animation-duration: 1.73s;
   animation-duration: 1.73s;
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  -webkit-animation-fill-mode: backwards;
-  -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
 }
 
 .slideIn.intro-content .content-wrapper {
-  -webkit-animation-name: mask-wrapper;
-  -moz-animation-name: mask-wrapper;
   animation-name: mask-wrapper;
 }
 
 .slideIn.intro-content .content-wrapper > div {
-  -webkit-animation-name: mask-content;
-  -moz-animation-name: mask-content;
   animation-name: mask-content;
 }
 
-@-webkit-keyframes mask-wrapper {
-  0% {
-    -webkit-transform: translateX(50%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-  }
-}
-@-moz-keyframes mask-wrapper {
-  0% {
-    -moz-transform: translateX(50%);
-  }
-  100% {
-    -moz-transform: translateX(0);
-  }
-}
 @keyframes mask-wrapper {
   0% {
-    -webkit-transform: translateX(50%);
-    -moz-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    -o-transform: translateX(50%);
     transform: translateX(50%);
   }
   100% {
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
     transform: translateX(0);
-  }
-}
-@-webkit-keyframes mask-content {
-  0% {
-    -webkit-transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-  }
-}
-@-moz-keyframes mask-content {
-  0% {
-    -moz-transform: translateX(-100%);
-  }
-  100% {
-    -moz-transform: translateX(0);
   }
 }
 @keyframes mask-content {
   0% {
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
   100% {
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
     transform: translateX(0);
-  }
-}
-@-webkit-keyframes pulse {
-  0%, 30.8% {
-    opacity: 0;
-  }
-  15.4%, 46.2%, 61.5%, 70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes pulse {
-  0%, 30.8% {
-    opacity: 0;
-  }
-  15.4%, 46.2%, 61.5%, 70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 @keyframes pulse {
@@ -296,25 +216,9 @@ section.fw{height: 100vh;width: 100vw;}
     position: relative;
     height: 8rem;
     width: 6rem;
-    -webkit-perspective: 479px;
-    -moz-perspective: 479px;
-    -ms-perspective: 479px;
-    -o-perspective: 479px;
     perspective: 479px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
@@ -331,15 +235,7 @@ section.fw{height: 100vh;width: 100vw;}
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     top: 0;
     width: 100%;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-transform-style: flat;
-    -moz-transform-style: flat;
-    -ms-transform-style: flat;
-    -o-transform-style: flat;
     transform-style: flat;
 }
 
@@ -348,29 +244,17 @@ section.fw{height: 100vh;width: 100vw;}
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 5px 5px 0 0;
     height: 50%;
-    -webkit-transform-origin: 50% 100%;
-    -moz-transform-origin: 50% 100%;
-    -ms-transform-origin: 50% 100%;
-    -o-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
 }
 
 .countdown .count.bottom {
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
-    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
-    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
-    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     border-radius: 0 0 5px 5px;
     line-height: 0;
     height: 50%;
     top: 50%;
-    -webkit-transform-origin: 50% 0;
-    -moz-transform-origin: 50% 0;
-    -ms-transform-origin: 50% 0;
-    -o-transform-origin: 50% 0;
     transform-origin: 50% 0;
 }
 
@@ -398,47 +282,23 @@ section.fw{height: 100vh;width: 100vw;}
 
 /* Animation start */
 .countdown .count.curr.top {
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
     transform: rotateX(0deg);
     z-index: 3;
 }
 
 .countdown .count.next.bottom {
-    -webkit-transform: rotateX(90deg);
-    -moz-transform: rotateX(90deg);
-    -ms-transform: rotateX(90deg);
-    -o-transform: rotateX(90deg);
     transform: rotateX(90deg);
     z-index: 2;
 }
 
 /* Animation end */
 .countdown .flip .count.curr.top {
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition: all 250ms ease-in-out;
-    -ms-transition: all 250ms ease-in-out;
-    -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
-    -webkit-transform: rotateX(-90deg);
-    -moz-transform: rotateX(-90deg);
-    -ms-transform: rotateX(-90deg);
-    -o-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
 }
 
 .countdown .flip .count.next.bottom {
-    -webkit-transition: all 250ms ease-in-out 250ms;
-    -moz-transition: all 250ms ease-in-out 250ms;
-    -ms-transition: all 250ms ease-in-out 250ms;
-    -o-transition: all 250ms ease-in-out 250ms;
     transition: all 250ms ease-in-out 250ms;
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
     transform: rotateX(0deg);
 }
 
