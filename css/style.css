@@ -189,8 +189,6 @@ a.nav-link.active,a.nav-link:hover{color: #fff !important;}
 	margin-bottom: 3rem;
 }
 
-.bb{border-bottom: 1px solid black;}
-
 .mf{margin-top: 10px;}
 
 #social {
@@ -250,6 +248,10 @@ a.nav-link.active,a.nav-link:hover{color: #fff !important;}
 	height:17px;
 	cursor:pointer;
 }
+
+#launchimg{width: 100%;}
+
+video{width: 100%;}
 
 .grtyoutube-iframe {
 	width:100%;
