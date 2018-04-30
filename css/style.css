@@ -55,7 +55,6 @@ a:focus{outline: 0;}
     background-color: #3a0a5c;
 }
 
-/*remove class when content exceeds height*/
 section.fw{min-height: 100vh;min-width: 100vw;}
 
 .navbar {background: #000;}
