@@ -68,7 +68,10 @@ a.nav-link {
 
 a.nav-link.active,a.nav-link:hover{color: #fff !important;}
 
-.navbar-nav .nav-link{border-bottom: 1px solid; transition: color .3s;}
+.navbar-nav .nav-link{
+	border-bottom: 1px solid;
+	transition: color .3s;
+}
 
 .navbar-nav li:last-child{margin-bottom: 1rem;}
 
