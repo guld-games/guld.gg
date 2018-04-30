@@ -57,9 +57,21 @@ a:focus{outline: 0;}
 
 section.fw{min-height: 100vh;min-width: 100vw;}
 
-.navbar {background: #000;}
+.navbar {background: #3a0a5c;}
 
-a.nav-link.active{font-weight: bold;text-decoration: underline;}
+.navbar-toggler{background-color: #ff5112;}
+
+a.nav-link {
+    color: #ff5112 !important;
+    font-weight: 400;
+    font-size: large;
+}
+
+a.nav-link:hover, a.nav-link.active{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #fff !important;
+}
 
 .navbar #logo {width: 15rem;}
 
@@ -69,7 +81,6 @@ a.nav-link.active{font-weight: bold;text-decoration: underline;}
     margin: 2rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-
 .header .description {
     color: #fff;
     font-size: 1.4rem;
@@ -362,14 +373,6 @@ a.nav-link.active{font-weight: bold;text-decoration: underline;}
 .countdown .flip .count.next.bottom {
     transition: all 250ms ease-in-out 250ms;
     transform: rotateX(0deg);
-}
-
-a.nav-link {
-    color: #fff !important;
-    font-weight: 400;
-    text-shadow: 0 0 20px #000000;
-    opacity: 0.8;
-    font-size: large;
 }
 
 .section-title h1 {
