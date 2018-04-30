@@ -220,6 +220,11 @@ a.nav-link.active,a.nav-link:hover{color: #fff !important;}
 
 #social #facebook {padding: 0.6rem 0.9rem;}
 
+#launchimg{width: 100%;}
+
+video{width: 100%;}
+
+/*
 .grtyoutube-popup {
 	position:fixed;
 	top:0;
@@ -249,10 +254,6 @@ a.nav-link.active,a.nav-link:hover{color: #fff !important;}
 	cursor:pointer;
 }
 
-#launchimg{width: 100%;}
-
-video{width: 100%;}
-
 .grtyoutube-iframe {
 	width:100%;
 	height:480px;
@@ -270,6 +271,7 @@ video{width: 100%;}
 .grtyoutube-light-theme {background: rgba(255,255,255, 0.85);}
 .grtyoutube-light-theme .grtyoutube-popup-content {box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);}
 .grtyoutube-light-theme .grtyoutube-popup-close {background: url('../img/icon-close-black.png') no-repeat;}
+*/
 
 /* Keeping countdown CSS in case we need it to countdown to the Launch Party */
 .countdown {
