@@ -109,6 +109,8 @@ a.nav-link.active{font-weight: bold;text-decoration: underline;}
   margin: 0 auto;
   padding: 2em 0;
   overflow: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1.0, 1.0);
 }
 /* vertical bar */
 /*
