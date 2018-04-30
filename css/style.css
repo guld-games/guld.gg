@@ -66,12 +66,16 @@ a.nav-link {
     font-size: large;
 }
 
-a.nav-link:hover{text-decoration: underline;color: #fff !important;}
+a.nav-link:hover{color: #fff !important;}
+
 a.nav-link.active{
 	font-weight: bold;
-	text-decoration: underline;
 	color: #fff !important;
 }
+
+.navbar-nav .nav-link{border-bottom: 1px solid; transition: color .3s;}
+
+.navbar-nav li:last-child{margin-bottom: 1rem;}
 
 .navbar #logo {width: 15rem;}
 
