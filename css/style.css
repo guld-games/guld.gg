@@ -51,7 +51,6 @@ a:focus{outline: 0;}
 .header {
     width: 100vw;
     height: 100vh;
-    z-index: 9;
     background-color: #3a0a5c;
 }
 
@@ -67,7 +66,8 @@ a.nav-link {
     font-size: large;
 }
 
-a.nav-link:hover, a.nav-link.active{
+a.nav-link:hover{text-decoration: underline;color: #fff !important;}
+a.nav-link.active{
 	font-weight: bold;
 	text-decoration: underline;
 	color: #fff !important;
