@@ -110,6 +110,8 @@ a.nav-link.active{font-weight: bold;text-decoration: underline;}
   padding: 2em 0;
   overflow: hidden;
 }
+/* vertical bar */
+/*
 .slideIn.intro-content .content-wrapper::before {
   content: '';
   position: absolute;
@@ -117,15 +119,11 @@ a.nav-link.active{font-weight: bold;text-decoration: underline;}
   top: 10vh;
   left: 0;
   height: 100vh;
-  /* vertical bar */
-/*
   width: .05rem;
   background-color: #fff;
-  -webkit-animation: pulse 1.3s 0.3s both;
-  -moz-animation: pulse 1.3s 0.3s both;
   animation: pulse 1.3s 0.3s both;
-*/
 }
+*/
 .slideIn.intro-content .content-wrapper > div {
   /* wrap the entire content */
   position: relative;
