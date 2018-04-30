@@ -60,6 +60,8 @@ section.fw{height: 100vh;width: 100vw;}
 
 .navbar {background: #000;}
 
+a.nav-link.active{font-weight: bold;text-decoration: underline;}
+
 .navbar #logo {width: 15rem;}
 
 .header .text {
