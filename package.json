@@ -4,7 +4,8 @@
   "description": "Guld Games",
   "main": "index.js",
   "dependencies": {
-    "markdown-folder-to-html": "^1.5.2"
+    "markdown-folder-to-html": "^1.5.2",
+    "npm": "^6.0.0"
   },
   "devDependencies": {},
   "scripts": {
