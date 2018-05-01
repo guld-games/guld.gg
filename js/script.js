@@ -15,8 +15,7 @@ jQuery(function ($) {
 		        }
 		    }
 		});
-		// Youtube Popup  
-		$('.yt').grtyoutube();
+		// Youtube Popup $('.yt').grtyoutube();
 		//Active styling & close navbar when link is clicked
 		$('.navbar-nav>li>a,nav a').on('click', function(){
 		$(this).addClass("active");
