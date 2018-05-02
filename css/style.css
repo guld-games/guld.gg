@@ -223,7 +223,9 @@ a.nav-link.active,a.nav-link:hover{color: #fff !important;}
 
 #social #facebook {padding: 0.6rem 0.9rem;}
 
-#launchimg, video{width: 100%;}
+#launchimg{margin-bottom:7.3px; width: 100%;}
+
+video{width: 100%;}
 
 /*
 .grtyoutube-popup {
