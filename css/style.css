@@ -225,7 +225,7 @@ a.nav-link.active,a.nav-link:hover{color: #fff !important;}
 
 #launchimg{margin-bottom:7.3px; width: 100%;}
 
-video{width: 100%;}
+video{width: 100%;cursor: pointer;}
 
 /*
 .grtyoutube-popup {
