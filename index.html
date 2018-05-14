@@ -43,7 +43,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="70">
 	
-	<nav class="navbar fixed-top navbar-expand-sm navbar-light">
+	<nav class="navbar fixed-top navbar-expand-md navbar-light">
 		<a class="navbar-brand" href="#page-top">
 			<img id="logo" src="img/logo.svg" alt="Guld Games">
 		</a>
@@ -52,6 +52,9 @@
 	   </button>
   		<div class="collapse navbar-collapse" id="navbarNav">
     		<ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section-play">Play</a>
+                </li>	    		
                 <li class="nav-item">
                     <a class="nav-link" href="#section-about">About</a>
                 </li>	            
@@ -77,22 +80,22 @@
 			<div class="intro-content slideIn">
 			<div class="content-wrapper">
 			<div>
-	            <div class="text">Introducing</div>
+	            <div class="text">Welcome to</div>
 	            <div class="welcome-container center">
 					<img id="welcomeimg" src="img/welcome.svg" alt="Guld Games">
 	            </div>
 	            
-	            <div class="description">Get started with Guld Games</div>
-	            <a href="#section-about" class="btn mx-auto">Read More</a>
+	            <div class="description">Are you ready to play?</div>
+	            <a href="#section-play" class="btn mx-auto">Play Guld Games</a>
 	            
 		        <div id="social">
-		            <a id="telegram" target="_blank" href="https://t.me/guldgames">
+		            <a id="telegram" href="https://t.me/guldgames">
 		                <i class="fab fa-telegram-plane"></i>
 		            </a>
-		            <a id="facebook" target="_blank" href="https://www.facebook.com/Guld-Games-1861894510497744/">
+		            <a id="facebook" href="https://www.facebook.com/Guld-Games-1861894510497744/">
 		                <i class="fab fa-facebook-f"></i>
 		            </a>
-		            <a id="twitter" target="_blank" href="https://twitter.com/GuldGames">
+		            <a id="twitter" href="https://twitter.com/GuldGames">
 		                <i class="fab fa-twitter"></i>
 		            </a>
 		        </div>
@@ -102,6 +105,63 @@
         </div><!--/#welcome--> 
     </header><!-- /header -->
     <div class="container-fluid">
+
+        <section id="section-play" class="section-wrapper fw mf">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1>How to Play Guld Games</h1>
+                        </div>
+                    </div>
+                </div>
+				  <div id="about" class="row">
+					<div class="col-md-12">
+						<h2>Installation Instructions</h2><br>
+
+						<h4>Before you install</h4><br>
+
+						<p>Currently, these extensions run only on the following operating systems:</p>
+						<ul>
+							<li>macOS (10.12.x or later)</li>
+							<li>Linux (kernel xxx or later, Ubuntu/Mint/Gentoo recommended)</li>
+							<li>Windows (7 or later)</li><br>
+						</ul>
+						
+						<p>In addition, you'll need:</p>
+						<ul>
+							<li><a href="https://www.python.org/downloads">Python 2.7 or later</a></li>
+							<li><a href="https://www.google.com/chrome">Chrome</a></li>
+							<li>or Chromium</li>
+							<a href="https://chromium.woolyss.com/download/#mac">Mac</a>
+							<a href="https://chromium.woolyss.com/download/#linux">Linux</a>  							
+							<a href="https://chromium.woolyss.com/download/#windows">Windows</a>
+							<li>an Internet connection</li>
+						</ul><br>
+						
+						<h4>Installation</h4><br>
+						
+						<p>Once your system meets the minimum requirements, you can install the various components: the <code>ledger-cli</code> application, our <code>ledger-native</code> bindings, and finally the Chrome extensions themselves.</p>
+						
+						<h5>Installing ledger-cli</h5><br>
+
+						<p>The first package you need to install is <code>ledger-cli</code>, the command-line based accounting system. This allows the extensions to interact with the Guld ledger.</p>
+
+						<h5>On macOS</h5>
+
+						<p>Using the <a href="https://docs.brew.sh/Installation">Brew</a> package manager, run the following command from a <code>Terminal</code> window:</p>
+						
+						<pre><code>brew install ledger</code></pre>
+						
+						<h5>On Linux</h5>
+
+						<p>The <a href="https://www.ledger-cli.org/download.html">ledger download page</a> has links to <code>ledger</code> versions for several linux distributions.</p>
+
+						<p><strong>*</strong> We only support ledger 3.1.1 and later. As of this writing, the <strong>Slackware</strong>, <strong>CentOS</strong>, and <strong>OpenSUSE</strong> packages were out of date, and may not work correctly with our extensions.</p>
+					</div>
+	            </div>
+            </div><!-- /.container -->
+        </section><!-- /.section-play -->
 
         <section id="section-about" class="section-wrapper gray-bg fw mf">
             <div class="container">
@@ -145,9 +205,9 @@
 <!--
 					<div class="col-lg-6">
 						<h3>Launch Party</h3><br>
-						<a href="https://www.facebook.com/events/165243837513508/" target="_blank"><img id="launchimg" src="img/gglaunch.png" alt="Guld Games"></a><br><br>
+						<a href="https://www.facebook.com/events/165243837513508/"><img id="launchimg" src="img/gglaunch.png" alt="Guld Games"></a><br><br>
 						<time title="May the 4th be with you!">7 p.m. Friday, May 4th</time>
-						<address>Biergarten @ <a href="https://www.google.com/maps/dir/''/bierpub+panama/data=!4m5!4m4!1m0!1m2!1m1!1s0x8faca8fa9127d741:0x50bcf4b0317c8c40?sa=X&ved=2ahUKEwiPhfKomODaAhXJKWMKHY-jBYUQ9RcwD3oFCAAQmQE" target="_blank">Hotel Riande Granada</a></address>
+						<address>Biergarten @ <a href="https://www.google.com/maps/dir/''/bierpub+panama/data=!4m5!4m4!1m0!1m2!1m1!1s0x8faca8fa9127d741:0x50bcf4b0317c8c40?sa=X&ved=2ahUKEwiPhfKomODaAhXJKWMKHY-jBYUQ9RcwD3oFCAAQmQE">Hotel Riande Granada</a></address>
 						<hr>
 					</div>
 -->
@@ -161,7 +221,7 @@
 						      <source src="gg.m4v" type="video/mp4">						      
 						  </video><br><br>
 						<time>7p.m. Every Wednesday</time>
-						<address>Bierpub @ <a href="https://www.google.com/maps/dir/''/bierpub+panama/data=!4m5!4m4!1m0!1m2!1m1!1s0x8faca8fa9127d741:0x50bcf4b0317c8c40?sa=X&ved=2ahUKEwiPhfKomODaAhXJKWMKHY-jBYUQ9RcwD3oFCAAQmQE" target="_blank">Hotel Riande Granada</a></address>
+						<address>Bierpub @ <a href="https://www.google.com/maps/dir/''/bierpub+panama/data=!4m5!4m4!1m0!1m2!1m1!1s0x8faca8fa9127d741:0x50bcf4b0317c8c40?sa=X&ved=2ahUKEwiPhfKomODaAhXJKWMKHY-jBYUQ9RcwD3oFCAAQmQE">Hotel Riande Granada</a></address>
 						<hr>
 					</div>
 	            </div>
@@ -181,16 +241,16 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <a target="_blank" href="https://guld.io">
+                        <a href="https://guld.io">
                             <img src="img/network/guld.svg" alt="Guld">
                         </a>	                    
-                        <a target="_blank" href="https://drprx.com">
+                        <a href="https://drprx.com">
                             <img src="img/network/drprx.svg" alt="Dr Prx">
                         </a>
-                        <a target="_blank" href="https://tigoctm.com">
+                        <a href="https://tigoctm.com">
                             <img src="img/network/tigoctm.svg" alt="TigoCTM">
                         </a>
-                        <a target="_blank" href="http://raadyx.com">
+                        <a href="http://raadyx.com">
                             <img src="img/network/raadyx.svg" alt="Raadyx">
                         </a>
                     </div>
@@ -211,16 +271,16 @@
 
                 <div class="row">
                     <div class="list-group">
-                         <a href="gg-agreement.html" class="button list-group-item list-group-item-action" target="_blank">GG Agreement
+                         <a href="gg-agreement.html" target="_blank" class="button list-group-item list-group-item-action">GG Agreement
                             <span class="badge badge-primary badge-pill float-right">html</span>
                         </a> 	                    
-                         <a href="lottery.html" class="button list-group-item list-group-item-action" target="_blank">Lottery
+                         <a href="lottery.html" target="_blank" class="button list-group-item list-group-item-action">Lottery
                             <span class="badge badge-primary badge-pill float-right">html</span>
                         </a>                              	                    
-                         <a href="odd-or-even.html" class="button list-group-item list-group-item-action" target="_blank">Odd or Even
+                         <a href="odd-or-even.html" target="_blank" class="button list-group-item list-group-item-action">Odd or Even
                             <span class="badge badge-primary badge-pill float-right">html</span>
                         </a>
-                         <a href="poker-agreement.html" class="button list-group-item list-group-item-action" target="_blank">Texas Hold'em Poker
+                         <a href="poker-agreement.html" target="_blank" class="button list-group-item list-group-item-action">Texas Hold'em Poker
                             <span class="badge badge-primary badge-pill float-right">html</span>
                         </a>                                                               
                     </div>
@@ -248,17 +308,17 @@
                 <div class="col-md-6">
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a target="_blank" href="https://t.me/guldgames">
+                            <a href="https://t.me/guldgames">
                                 <i class="fab fa-telegram-plane"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a target="_blank" href="https://www.facebook.com/Guld-Games-1861894510497744/">
+                            <a href="https://www.facebook.com/Guld-Games-1861894510497744/">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a target="_blank" href="https://twitter.com/GuldGames">
+                            <a href="https://twitter.com/GuldGames">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
