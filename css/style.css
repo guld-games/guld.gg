@@ -219,6 +219,15 @@ a.nav-link {
 
 .mf{margin-top: 10px;}
 
+pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f6f8fa;
+	border-radius: 3px;
+}
+
 #social {
     position: absolute;
     bottom: -6rem;
