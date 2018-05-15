@@ -48,6 +48,8 @@ a:focus{outline: 0;}
 
 .btn:focus{box-shadow: none;}
 
+img{transition: .3s;}
+
 .header {
     width: 100vw;
     height: 100vh;
