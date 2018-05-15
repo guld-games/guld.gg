@@ -82,6 +82,10 @@ a.nav-link.active,a.nav-link:hover{
     width: 12rem;
 }
 
+.show .navbar-nav {
+    height: auto;
+}
+
 .navbar-nav {
     height: 2rem;
 }
