@@ -62,6 +62,10 @@ a:focus{outline: 0;}
 
 .navbar-toggler{background-color: #ff5112;}
 
+.nav-link{
+	padding: .7rem 1rem;
+}
+
 a.nav-link {
     color: #fff !important;
     font-weight: 400;
@@ -239,9 +243,7 @@ a.nav-link {
     top: 0;
     position: relative;
     animation: social-show 1s;
-    -webkit-animation: social-show 1s;
     transition: all .3s;
-
 }
 
 #social a:hover,
