@@ -9,13 +9,12 @@ jQuery(function ($) {
 		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		           if (target.length) {
 		             $('html,body').animate({
-		                 scrollTop: target.offset().top - 20 //scroll position fix
+		                 scrollTop: target.offset().top
 		            }, 737);
 		            return false;
 		        }
 		    }
 		});
-		// Youtube Popup $('.yt').grtyoutube();
 		//Active styling & close navbar when link is clicked
 		$('.navbar-nav>li>a,nav a').on('click', function(){
 			$(this).addClass("active");
