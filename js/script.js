@@ -20,5 +20,7 @@ jQuery(function ($) {
 			$(this).addClass("active");
 			$('.navbar-collapse').collapse('hide');
 		});
+		// Open all external links in new window
+		$('a').filter(function () {return this.hostname != window.location.hostname;}).attr('target', '_blank');		
     }());
 }); // JQuery end
