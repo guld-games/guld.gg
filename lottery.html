@@ -16,8 +16,10 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <style>
-        body {
+    <style>	    
+        html, body {
+		    max-width: 100%;
+		    overflow-x: hidden;	        
             font-family: 'Roboto', sans-serif;
             color: #000;
             font-weight: 300;
@@ -103,6 +105,8 @@
         #content {
             margin-top: 2rem;
         }
+        
+        .room{margin: 1rem;}
 
         .list-group ul {
             margin: 0;
@@ -231,7 +235,7 @@
                 <img id="logo" src="img/logo.svg" class="img-responsive" alt="Guld Games">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+                aria-label="toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -258,7 +262,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-9">
-                <div>
+                <div class="room">
                     <h1>Lottery Game Agreement</h1>
 <p>Agreement made _________ (date), between _____________________, known by signing key _____________________________ (public key), in this agreement referred to as DEALER, and _______________, known by signing key ________________________ (public key), in this agreement referred to as PLAYER.</p>
 <h3>1) OBJECTIVE</h3>
