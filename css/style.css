@@ -278,7 +278,10 @@ section {
     color: #C0C0C0;
 }
 
-.list-group {width: 100%;}
+.list-group {
+	width: 100%;
+	padding: 0 1rem;
+}
 
 .list-group button span {float: right;}
 
