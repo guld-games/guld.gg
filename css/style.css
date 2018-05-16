@@ -80,8 +80,6 @@ a.nav-link.active,a.nav-link:hover{
 	transition: color .3s;
 }
 
-.navbar-nav li:last-child{margin-bottom: 1rem;}
-
 .navbar #logo {
     width: 12rem;
 }
