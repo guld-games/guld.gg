@@ -52,7 +52,7 @@ a:focus{outline: 0;}
     height: 100vh;
     min-height: 100%;
     width: 100%;
-    background-color: #310a5d;
+    background-color: #3a0a5c;
 }
 
 /*
@@ -71,7 +71,7 @@ a:focus{outline: 0;}
 
 .navbar {
     padding: 0.4rem 1rem;
-    background: #310a5d;
+    background: #3a0a5c;
 }
 
 /*
@@ -163,7 +163,7 @@ a.nav-link {
 	margin-bottom: 3rem;
 }
 
-.mf{margin-top: 10px;}
+.mf{margin-top: 6px;}
 
 pre {
 	background-color: #f7f7f7;
