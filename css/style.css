@@ -54,7 +54,8 @@ a:focus{outline: 0;}
     width: 100%;
     padding-top: 6rem;
     padding-bottom: 12rem;
-    background-color: #320a5d;
+    /*#3a0a5c*/
+    background-color: #310a5d;
 }
 
 .header::before {
@@ -69,9 +70,9 @@ a:focus{outline: 0;}
   left: 0;
 }
 
-
 .navbar {
-    background: #320a5d;
+	/*#3a0a5c*/
+    background: #310a5d;
     padding: 0.4rem 1rem;
 }
 
