@@ -54,12 +54,38 @@ a:focus{outline: 0;}
     width: 100%;
     padding-top: 6rem;
     padding-bottom: 12rem;
-    background-color: #3a0a5c;
+    background-color: #320a5d;
 }
 
+.header::before {
+  content: "";
+  background: url("../img/gg.png");
+  opacity: 0.3;
+  filter: alpha(opacity=30);  
+  position: absolute;  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
 .navbar {
-    background: #3a0a5c;
+    background: #320a5d;
     padding: 0.4rem 1rem;
+}
+
+.navbar::before {
+  content: "";
+  background: url("../img/gg.png");
+  opacity: 0.3;
+  filter: alpha(opacity=30);  
+  position: absolute;  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .navbar-toggler{background-color: #ff5112;}
