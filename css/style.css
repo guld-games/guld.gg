@@ -49,11 +49,9 @@ a:focus{outline: 0;}
 .btn:focus{box-shadow: none;}
 
 .header {
-	height: 100vh;
-	min-height: 100%;
+    height: 100vh;
+    min-height: 100%;
     width: 100%;
-    padding-top: 6rem;
-    padding-bottom: 12rem;
     background-color: #310a5d;
      				/*#3a0a5c*/   
 }
