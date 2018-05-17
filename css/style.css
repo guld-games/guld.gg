@@ -90,10 +90,6 @@ a.nav-link.active,a.nav-link:hover{
     height: auto;
 }
 
-.navbar-nav {
-    height: 2rem;
-}
-
 a.nav-link {
     line-height: 1rem;
 }
