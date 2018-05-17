@@ -1,10 +1,10 @@
 /*
 Template Name: Guld Games
 Description: HTML5 / CSS3 One Page
-Version: 0.1
+Version: 1.0
 Author: Rio Myers
 Website: https://riomyers.com
-Disclaimer: Some website components were copied from Guld.io template, originally designed by Chriss Mejía, https://chrissmejia.com
+Disclaimer: Some website components were copied from Guld.io template, originally designed by Chriss Mejia, https://chrissmejia.com
 */
 html {
   overflow-x: hidden;
@@ -54,8 +54,8 @@ a:focus{outline: 0;}
     width: 100%;
     padding-top: 6rem;
     padding-bottom: 12rem;
-    /*#3a0a5c*/
     background-color: #310a5d;
+     				/*#3a0a5c*/   
 }
 
 .header::before {
@@ -71,9 +71,9 @@ a:focus{outline: 0;}
 }
 
 .navbar {
-	/*#3a0a5c*/
-    background: #310a5d;
     padding: 0.4rem 1rem;
+    background: #310a5d;
+			  /*#3a0a5c*/      
 }
 
 .navbar::before {
@@ -135,7 +135,10 @@ a.nav-link {
 }
 
 .header #welcome {
-	position: relative;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -156,22 +159,30 @@ a.nav-link {
     margin: 2rem 0 1.4rem;
 }
 
-.welcome-container {
-    width: 100%;
-    max-width: 28em;
-    position: relative;
-    margin: 0 auto;
-}
-
 #events .col-md-6{
 	margin-bottom: 3rem;
 }
 
 .mf{margin-top: 10px;}
 
+pre {
+	background-color: #f7f7f7;
+	box-shadow: 0 2px 4px rgba(0,0,0,.15),0 0 3px rgba(0,0,0,.15);
+	padding: .99em;
+	overflow-x: auto;
+	white-space: pre;
+	font-size: .95em;
+	line-height: 1.8em;
+}
+
+code{
+	background-color: #f7f7f7;
+	padding: .2em;	
+}
+
 #social {
     position: absolute;
-    bottom: -6rem;
+    bottom: 0;
     width: 100%;
     text-align: center;
 }
