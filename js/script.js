@@ -15,7 +15,7 @@ jQuery(function ($) {
 		        }
 		    }
 		});
-		//Active styling & close navbar when link is clicked
+		// Active styling & close navbar when link is clicked
 		$('.navbar-nav>li>a,nav a').on('click', function(){
 			$(this).addClass("active");
 			$('.navbar-collapse').collapse('hide');
