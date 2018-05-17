@@ -52,13 +52,42 @@ a:focus{outline: 0;}
     height: 100vh;
     min-height: 100%;
     width: 100%;
-    background-color: #3a0a5c;
+    background-color: #310a5d;
 }
+
+/*
+.header::before {
+  content: "";
+  background: url("../img/gg.png");
+  opacity: 0.3;
+  filter: alpha(opacity=30);  
+  position: absolute;  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+*/
 
 .navbar {
     padding: 0.4rem 1rem;
-    background: #3a0a5c;
+    background: #310a5d;
 }
+
+/*
+.navbar::before {
+  content: "";
+  background: url("../img/gg.png");
+  opacity: 0.3;
+  filter: alpha(opacity=30);  
+  position: absolute;  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+*/
 
 .navbar-toggler{background-color: #ff5112;}
 
