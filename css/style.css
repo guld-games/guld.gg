@@ -6,10 +6,6 @@ Author: Rio Myers
 Website: https://riomyers.com
 Disclaimer: Some website components were copied from Guld.io template, originally designed by Chriss Mejia, https://chrissmejia.com
 */
-html {
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
