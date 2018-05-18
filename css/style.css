@@ -44,9 +44,11 @@ a:hover{
 	cursor: pointer;
 }
 
-a:focus{outline: 0;}
+a:focus {outline: none;}
 
-.btn:focus{box-shadow: none;}
+:focus {outline: none !important;}
+
+.btn:focus {box-shadow: none;}
 
 .header {
     height: 100vh;
@@ -55,7 +57,6 @@ a:focus{outline: 0;}
     background-color: #3a0a5c;
 }
 
-/*
 .header::before {
   content: "";
   background: url("../img/gg.png");
@@ -66,15 +67,15 @@ a:focus{outline: 0;}
   right: 0;
   bottom: 0;
   left: 0;
+  height: 100vh;
+  min-height: 100%;
 }
-*/
 
 .navbar {
     padding: 0.4rem 1rem;
     background: #3a0a5c;
 }
 
-/*
 .navbar::before {
   content: "";
   background: url("../img/gg.png");
@@ -87,7 +88,6 @@ a:focus{outline: 0;}
   left: 0;
   z-index: -1;
 }
-*/
 
 .navbar-toggler{background-color: #ff5112;}
 
