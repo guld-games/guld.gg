@@ -324,9 +324,11 @@ section {
 }
 
 .footer ul {
-    margin: 0;
-    float: right;
+	margin-top: 1em;
+	text-align: center;
 }
+
+.copytext{text-align: center;}
 
 .footer .row {margin: 0;}
 
