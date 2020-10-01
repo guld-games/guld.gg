@@ -1,2 +1,6 @@
-# guld.gg
-Source for guld.gg website (guld games)
+                                                           #Guld.gg
+                                              Source for Guld.gg website (Guld Games)
+                                              
+                                              
+                                              
+                                              
